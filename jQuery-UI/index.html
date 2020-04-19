@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Leaning jQuery-UI</title>
+        <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery.min.js" type="text/javascript" ></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript" ></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/index.js" type="text/javascript" ></script>
+    </head> 
+
+    <body class="container-fluid">
+        <div class="jumbotron" id="top-of-page">
+            <h1>Learning jQuery-UI</h1>
+            <p>Here's where I perform all sorts of 
+                experiments on jQuery-UI
+            </p>
+        </div>
+
+        <!--jQuery UI Widgets-->
+        <div class="my-section">
+            <h2>jQuery UI Widgets</h2>
+            <small>Part 1 and 2</small>
+            <!-- Dialog Box -->
+            <div id="dialog-container" class="my-section">
+                <h3 class="demoHeaders">Dialog Box</h3>
+                <p> 
+                    <button id="dialog-link" class="ui-button ui-corner-all ui-widget">
+                        <span class="ui-icon ui-icon-newwin"></span>Open Dialog
+                    </button>
+                </p>
+                <p>
+                    Your Response: <span id="dialog-response"></span>
+                </p>
+                <div id="dialog" title="Test Title">
+                    <span style="color: rgb(216, 47, 75); font-size: 28px; font-weight: 600;">DO YOU WANT TO DO THIS? </span>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div id="progress-container" class="my-section">
+                <h3>Progress Bar</h3>
+                <button id="start-timer">Start Timer</button><br><br>
+                <div id="countdown-progress-bar"></div>
+                <div id="countdown-value">100%</div>
+            </div>
+
+            <!-- Sliders 1 and 2-->
+            <div class="my-section">
+                <h3>Slider</h3>
+                <div class="col-md-6" id="slider-container-1" >
+                    
+                    <p><b>Pick a Price Range</b></p>
+                    <div>
+                        Between <p class="range-price" id="lower-price" contenteditable></p> 
+                        and 
+                        <div class="range-price" id="higher-price" contenteditable></div><br><br>
+                    </div>
+                    <div id="slider"></div>
+                </div>
+                <div class="col-md-6" id="slider-container-2" >
+                    <div id="colored-box" class="col-md-6"></div>
+                    <div class="col-md-6" id="slide-2-content">
+                        <p>Use the sliders to set the color of the box</p>
+                        <div id="slider-1" class="sliders"></div>
+                        <div id="slider-2" class="sliders"></div>
+                        <div id="slider-3" class="sliders"></div>
+                        <div id="color-test"></div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs -->
+            <div class=" my-section">
+                <h3>Tabs</h3>
+                <div id="tabs" class="col-12">
+                    <ul>
+                        <li><a href="#tab-1">Tab 1</a></li>
+                        <li><a href="#tab-2">Tab 2</a></li>
+                        <li><a href="#tab-3">Tab 3</a></li>
+                    </ul>
+                    <div id="tab-1">
+                        <h4>Welcome to Tab 1</h4>
+                        <p>This is the content for tab 1</p>
+                    </div>
+                    <div id="tab-2">
+                        <h4>Welcome to tab 2</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Doloremque accusantium labore quia eligendi laboriosam nesciunt 
+                            ratione blanditiis quod error, porro voluptatem! Quas at perferendis 
+                            harum eum molestias vitae quis sit.
+                        </p>
+                    </div>
+                    <div id="tab-3">
+                        <h4>Welcome to tab 3</h4>
+                        <p>
+                            I beseech you therefore, brethren, by the mercies of God, 
+                            that ye present your bodies a living sacrifice, holy, 
+                            acceptable unto God, which is your reasonable service.
+                            <b>Romans 12: 1</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accordion -->
+            <div class="my-section">
+                <h3>Accordion</h3>
+                <div class="col-12" id="accordion">
+                    <h3> 3 John vs 2</h3>
+                    <div>Beloved, I wish above all things that thou mayest
+                        prosper and be in health even as thy soul prospereth.
+                    </div>
+                    <h3>1 Corinthians 2 vs 16 </h3>
+                    <div> But he that is spiritual judg beth all things,
+                        yet he himself is judged of no man.
+                    </div>
+                    <h3>Joshua 1 vs 8</h3>
+                    <div>This book of the law shall not depart out of
+                        thy mouth, but thou shalt meditate therein day 
+                        and night that thou mayest do to observe all 
+                        that is written therein
+                    </div>
+                    <h3>Psalm 1 vs 1</h3>
+                    <div>Blessed is the man that walketh not in the 
+                        counsel of the ungodly, nor standeth in the
+                        way of sinners, nor sitteth in the seat of 
+                        the scornful
+                    </div>
+                    <h3>Testing autoHeight with Lorem-Ipsum</h3>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit vitae sapiente eius odio ad explicabo alias harum 
+                        inventore quibusdam eum doloremque deserunt animi culpa, 
+                        voluptatum quaerat incidunt, ipsam enim repellendus.
+                    </div>
+                    <h3>Double-Testing autoHeight with Lorem-Ipsum</h3>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit vitae sapiente eius odio ad explicabo alias harum 
+                        inventore quibusdam eum doloremque deserunt animi culpa, 
+                        voluptatum quaerat incidunt, ipsam enim repellendus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit vitae sapiente eius odio ad explicabo alias harum 
+                        inventore quibusdam eum doloremque deserunt animi culpa, 
+                        voluptatum quaerat incidunt, ipsam enim repellendus.
+                    </div>
+                    <h3>Triple-Testing autoHeight with Lorem-Ipsum</h3>
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit vitae sapiente eius odio ad explicabo alias harum 
+                        inventore quibusdam eum doloremque deserunt animi culpa, 
+                        voluptatum quaerat incidunt, ipsam enim repellendus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit vitae sapiente eius odio ad explicabo alias harum 
+                        inventore quibusdam eum doloremque deserunt animi culpa, 
+                        voluptatum quaerat incidunt, ipsam enim repellendus.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Fugit vitae sapiente eius odio ad explicabo alias harum 
+                        inventore quibusdam eum doloremque deserunt animi culpa, 
+                        voluptatum quaerat incidunt, ipsam enim repellendus.
+                    </div>
+                    <!-- Auto height isn't working-->
+                </div>
+            </div>
+
+            <!-- Auto Complete-->
+            <div class="my-section">
+                <h3>Auto Complete</h3>
+                <label>
+                    Search: <input id="auto-complete" type="search" name="autocomplete" id="auto-complete">
+                </label>
+            </div>
+
+            <!-- Buttons and Sprites-->
+            <div id="pers-buttons" class="my-section">
+                <h3>Buttons and Sprites</h3>
+                <a href="#top-of-page"> Go to top of Page </a>
+                <button type="button" >A button</button>
+                <input type="date"></input>
+            </div>
+
+            <!-- Radios and Checkboxes-->
+            <div class="my-section">
+                <h3>Radions and Checkboxes</h3>
+                <small>come and fininsh your assignment</small>
+            </div>
+
+            <!-- The DatePicker-->
+            <div class="my-section">
+                <h3>The Date Picker</h3>
+                <input type="text" id="dateSelector">
+            </div>
+        </div>
+
+        <!--jQuery UI Interactions-->
+        <div class="my-section">
+            <h2>jQuery UI Interactions</h2>
+            <a href="#project">Back to Project</a>
+            <div id="draggables" class="my-section">
+                <h3>Draggables</h3>
+                <div id="drag-item-1" class="drag-items"><header>BOX 1</header></div>
+                <div id="drag-item-2" class="drag-items"><header>BOX 2</header></div>
+                <div id="drag-item-3" class="drag-items"><header>BOX 3</header></div>
+            </div>
+            <div id="droppables" class="my-section">
+                <h3>Droppables</h3>
+                <div id="drop-zone"></div>
+            </div>
+            <div id="sortables" class="my-section">
+                <h3>Sortables</h3>
+                <p>Please rearrange in oder of preference</p>
+                <ul id="sort-list">
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>C++</li>
+                    <li>Ruby</li>
+                    <li>FORTRAN</li>
+                </ul>
+            </div>
+            <div class="my-section" id="resizables">
+                <h3>Resizables</h3>
+                <div class="resizable-boxes" id="box-1"></div>
+                <div class="resizable-boxes" id="box-2"></div>
+                <div class="resizable-boxes" id="box-3"></div>
+            </div>
+        </div>
+        
+        <!--jQuery UI Effects and Animations-->
+        <div class="my-section">
+            <h2>jQuery UI Effects and Animations</h2>
+            <div id="anim-1" class="my-section">
+                <h3>Effect 1</h3>
+                <div id="box-anim-1" class="run-anims"></div>
+                <button id="run-anim-1" class="btn btn-sm btn-success ">Run animation</button>
+            </div>
+            <div id="anim-2" class="my-section">
+                <h3>Effect 2</h3>
+                <div id="box-anim-2" class="run-anims"></div>
+                <button id="run-anim-2" class="btn btn-sm btn-success ">Run animation</button>
+            </div>
+        </div>
+        <div class="my-section" id="project">
+            <h3>A Memory Game</h3>
+            <div class="my-section" id="project-container">
+                <div class="row" id="row-1">
+                    <div class="col-md-3 game-box" id="game-box-1"></div>
+                    <div class="col-md-3 game-box" id="game-box-2"></div>
+                    <div class="col-md-3 game-box" id="game-box-3"></div>
+                    <div class="col-md-3 game-box" id="game-box-4"></div>
+                </div>
+                <div class="row" id="row-2">
+                    <div class="col-md-3 game-box" id="game-box-5"></div>
+                    <div class="col-md-3 game-box" id="game-box-6"></div>
+                    <div class="col-md-3 game-box" id="game-box-7"></div>
+                    <div class="col-md-3 game-box" id="game-box-8"></div>
+                </div>
+                <div class="row" id="row-3">
+                    <div class="col-md-3 game-box" id="game-box-9"></div>
+                    <div class="col-md-3 game-box" id="game-box-10"></div>
+                    <div class="col-md-3 game-box" id="game-box-11"></div>
+                    <div class="col-md-3 game-box" id="game-box-12"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer --> 
+        <div class="jumbotron jumbotron-fluid my-footer">
+
+        </div>
+    </body>
+</html>
