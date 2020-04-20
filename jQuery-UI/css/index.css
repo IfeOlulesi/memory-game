@@ -1,3 +1,7 @@
+   * {
+    margin: 0;
+}
+
 .my-section {
     padding: 10px;
     border-left: 1px solid lightgray;
@@ -243,3 +247,8 @@ li {
 .orange-box {background-color: orange;}
 .brown-box {background-color: brown}
 .pink-box {background-color: pink;}
+
+@keyframes tranform{
+    from {width: 40px}
+    to {width: 80px}
+}

@@ -30,7 +30,7 @@ $(function() {
         value = 100;
 
         countdown();
-        
+        //cant hear you 
         function countdown() {
             value --;
 
@@ -153,6 +153,10 @@ $(function() {
         $("#box-anim-2").effect("explode", {pieces: 14}, 1000)
     })
 
+    $(".flip").flip({
+        trigger: 'click'
+    });
+
     // memory game
     function memGame() {
         colorClasses = {
@@ -170,24 +174,14 @@ $(function() {
                 we arrive at one in the array
             }
             continue generating the random no until you
+
+            sampleArray:- colorClassGetter = [1,2,3,4,5,6,1,2,3,4,5,6];
         */
-        let x = 12;
-        const t = 0;
-        for (let e = 0; e <= 12; e++) {    
-        // loop for each box
-            
-            colorClassGetter = [1,2,3,4,5,6,1,2,3,4,5,6];
-            while (t < colorClassGetter.length || x > 1) {
-                // until cCG is empty, generate a ran no 
-                // perform check operation
-                let ranNum = Math.round(Math.random() * 6)
-                if ($.inArray(ranNum, colorClassGetter) > -1) {
-                    $(`#game-box-${e}`).addClass(colorClasses[ranNum]);
-                    colorClassGetter.splice(ranNum, 1);
-                }
-                console.log(x);
-                x = x - 1;
-            }
+       colorClassGetter = [1,2,3,4,5,6,1,2,3,4,5,6];
+
+        for (let x = 0; x < 12; x++) {
+            temp = colorClassGetter[x];
+            $(`#game-box-${x+1}`).addClass(colorClasses[temp]);
         }
     }
 
