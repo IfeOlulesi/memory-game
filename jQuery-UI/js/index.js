@@ -170,7 +170,7 @@ $(function() {
                 we arrive at one in the array
             }
             continue generating the random no until you
-        */
+        
         let x = 12;
         const t = 0;
         for (let e = 0; e <= 12; e++) {    
@@ -188,7 +188,7 @@ $(function() {
                 console.log(x);
                 x = x - 1;
             }
-        }
+        }*/
     }
 
     memGame();
