@@ -191,7 +191,7 @@ $(function() {
         }*/
     }
 
-    memGame();
+    //memGame();
 });
 
 //C:\Users\Anchor05\Documents\UG48\CODING & COMP. SCIENCE\WEB. DEV\Others\jQuery-UI\js\index.js
