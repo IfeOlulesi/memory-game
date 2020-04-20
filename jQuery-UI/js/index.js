@@ -174,9 +174,10 @@ $(function() {
                 we arrive at one in the array
             }
             continue generating the random no until you
-
             sampleArray:- colorClassGetter = [1,2,3,4,5,6,1,2,3,4,5,6];
         */
+       // a simpler way to assign the boxes colors
+       // make 3 more ways and randomly choose them for each reload
        colorClassGetter = [1,2,3,4,5,6,1,2,3,4,5,6];
 
         for (let x = 0; x < 12; x++) {
@@ -185,7 +186,7 @@ $(function() {
         }
     }
 
-    memGame();
+    //memGame();
 });
 
 //C:\Users\Anchor05\Documents\UG48\CODING & COMP. SCIENCE\WEB. DEV\Others\jQuery-UI\js\index.js
